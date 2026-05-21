@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Current Interest | LOOT</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,42 +21,42 @@
     <hr>
 
     <main>
-        <section>
-            <h2>SIDE QUESTS (Hobbies)</h2>
-            <ul>
-                <li>Gaming</li>
-                <li>Jogging</li>
-                <li>Miniture Car Collecting</li>
-            </ul>
-        </section>
+        <div class="quest-grid">
+            <section>
+                <h2>SIDE QUESTS (Hobbies)</h2>
+                <ul>
+                    <li>Gaming</li>
+                    <li>Jogging</li>
+                    <li>Miniture Car Collecting</li>
+                </ul>
+            </section>
 
-        <section>
-            <h2> MULTIMEDIA LOOT</h2>
-            
-            <article>
-                <h3>[ITEM 1: Me Playing Valorant (VIDEO)]</h3>
-                <video width="720" height="500" controls>
-                    <source src="CLIP.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p>Description: Valorant Clip of me getting an ace.</p>
-            </article>
+            <section>
+                <h2> MULTIMEDIA LOOT</h2>
+                
+                <article>
+                    <h3>[ITEM 1: Me Playing Valorant (VIDEO)]</h3>
+                    <video width="720" height="500" controls>
+                        <source src="CLIP.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Description: Valorant Clip of me getting an ace.</p>
+                </article>
 
-            <article>
-                <h3>[ITEM 2: My Favorite Music of All Time (AUDIO)]</h3>
-                <p>Description: This helps me focus in coding long projects.</p>
-                 <h4>Be Quiet and Drive by Deftones</h4>
-                  <img src="deftones.jpg" alt="Deftones Album Cover" width="150"><br>
-                <audio controls>
-                    <source src="music.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </article>
-        </section>
+                <article>
+                    <h3>[ITEM 2: My Favorite Music of All Time (AUDIO)]</h3>
+                    <p>Description: This helps me focus in coding long projects.</p>
+                     <h4>Be Quiet and Drive by Deftones</h4>
+                      <img src="deftones.jpg" alt="Deftones Album Cover" width="150"><br>
+                    <audio controls>
+                        <source src="music.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </article>
+            </section>
+        </div>
 
-        <hr>
-
-        <section id="party-form">
+        <section id="party-form" class="quest-full">
             <h2>Party Application (Contact)</h2>
             <h4>Interested in collaborating on a project or just want to connect? Fill out the form below to send me a message!</h4>
             
@@ -71,14 +71,22 @@
                 <input type="date" id="birthday" name="birthday"><br><br>
 
                 <p>Select Specialty:</p>
-                <input type="checkbox" id="pro1" name="specialty" value="PT">
-                <label for="pro1">Packet Tracer</label><br>
-                <input type="checkbox" id="pro2" name="specialty" value="scripts">
-                <label for="pro2">MySql</label><br>
-                <input type="checkbox" id="pro3" name="specialty" value="java">
-                <label for="pro3">Java</label><br>
-                <input type="checkbox" id="pro4" name="specialty" value="C">
-                <label for="pro4">C</label><br><br>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="pro1" name="specialty" value="PT">
+                    <label for="pro1">Packet Tracer</label>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="pro2" name="specialty" value="scripts">
+                    <label for="pro2">MySql</label>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="pro3" name="specialty" value="java">
+                    <label for="pro3">Java</label>
+                </div>
+                <div class="checkbox-row">
+                    <input type="checkbox" id="pro4" name="specialty" value="C">
+                    <label for="pro4">C</label>
+                </div>
 
                 <input type="submit" value="SEND REQUEST">
             </form>
